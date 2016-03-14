@@ -16,12 +16,6 @@ page.open(url, function (status) {
         console.log('Unable to load ' + url + ' !');
         phantom.exit();
     } else {
- /*       window.setTimeout(function () {
-            page.clipRect = { left: 0, top: 0, width: pageW, height: pageH };
-            page.render(filename);
-            console.log('finish:', filename);
-            phantom.exit();
-        }, 1000);*/
         page.render(filename);
         phantom.exit();
     }
